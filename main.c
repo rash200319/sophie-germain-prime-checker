@@ -42,14 +42,7 @@ int main()
         printf("enter your number:");
         while(scanf("%d",&number) !=1 || number<=0)//getting the input from the user and checking if its valid
             {
-            if (scanf("%d",&number) !=1)
-                {
-                printf("Error:not a valid input.please input a positive integer value.\n");
-                }    
-            else if (number<=0)
-                {
-                printf("error:not a valid input.number cannot be negative or zero");
-                }
+            printf("Error:not a valid input.please input a positive integer value.\n");
             clean_buffer();
             printf("Enter your number:");
             continue;
